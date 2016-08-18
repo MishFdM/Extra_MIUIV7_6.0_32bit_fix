@@ -1,6 +1,5 @@
 get_device_compatible("cancro") == "OK" || abort("This package is for \"cancro\" devices; this is a \"" + getprop("ro.product.device") + "\".");
 mount("ext4", "EMMC", "/dev/block/platform/msm_sdcc.1/by-name/userdata", "/data", "");
-ui_print("Target: Xiaomi/cancro/cancro:6.0.1/MMB29M/6.6.23:user/release-keys");
 show_progress(0.750000, 0);
 format("ext4", "EMMC", "/dev/block/platform/msm_sdcc.1/by-name/system", "0", "/system");
 mount("ext4", "EMMC", "/dev/block/platform/msm_sdcc.1/by-name/system", "/system", "max_batch_time=0,commit=1,data=ordered,barrier=1,errors=panic,nodelalloc");
